@@ -1,17 +1,15 @@
-import pytest
 import requests
-# from constants import BASE_URL, HEADERS, REGISTER_ENDPOINT
-
-import sys
-from pathlib import Path
-
-# Путь к директории на два уровня выше
-root_dir = Path(__file__).resolve().parents[2]  # .parents[2] = два уровня вверх
-sys.path.append(str(root_dir))
-
-# Импорт модуля из этой директории
 from constants import BASE_URL, HEADERS, REGISTER_ENDPOINT
-from conftest import test_user, auth_session
+# from conftest import test_user
+
+
+# # Путь к директории на два уровня выше
+# root_dir = Path(__file__).resolve().parents[2]  # .parents[2] = два уровня вверх
+# sys.path.append(str(root_dir))
+#
+# # Импорт модуля из этой директории
+# from Cinescope.constants import BASE_URL, HEADERS, REGISTER_ENDPOINT
+# from Cinescope.conftest import test_user
 
 
 class TestAuthAPI:
